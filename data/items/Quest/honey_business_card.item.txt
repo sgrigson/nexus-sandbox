@@ -1,0 +1,7 @@
+id: "honey_business_card"
+type: ItemType_QuestItem
+uirep {
+  name: "Honey\'s Business Card"
+}
+credentials: 0
+sorting_group: "Quest"

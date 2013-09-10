@@ -1,0 +1,227 @@
+idRef {
+  id: "522cb0263238392c1b006590"
+}
+ui_name: "honey-intro-conversation"
+nodes {
+  idRef {
+    id: "522cb0303238392c1b006596"
+  }
+  index: 0
+  text: "{{GM}}Before you stands a stunning elven woman, one of the most enchanting you\'ve ever seen. Her features are flawless, and the light touch of makeup she wears accentuates her beauty. Her pouting mouth holds a firm line, keeping her inner thoughts in reserve. At her side stand two very formidable-looking bodyguards. Their faces are a blank slate, and their eyes are cold--the eyes of murderers, obviously augmented and trained for battle. They eye you up as if merely waiting for an opening. When she opens her mouth to speak her voice is warm and possesses a trace of an elvish accent, and you feel yourself drawn by her words despite yourself.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cb0c53238392c1b00659b"
+  }
+  index: 1
+  text: "I see you found your way in. So might I ask you, respectfully, what the frag you\'re doing here?"
+  branches {
+    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} We haven\'t been officially introduced. I\'m $(s.name). You may have heard of me. I came here because I heard you\'re the best fixer in town, and I like to work with the best."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "My name is $(s.name). I\'m just looking for work."
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "Well, I have this business card..."
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cb1973238392c1b0065a0"
+  }
+  index: 2
+  text: "I\'ve heard of you.  You\'ve made a name for yourself, and I pay attention to people who make a name for themself.  A $(l.guy) like you should be careful in becoming so well known. Fame isn\'t always a good thing in the shadows."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cb1f13238392c1b0065a3"
+  }
+  index: 3
+  text: "Let me tell you what it is that I\'m doing down here. My name is Honey. I used to run the shadows. I know your kind of work, know it so well that I\'ve got my own little roster of runners that work for me more or less exclusively. You\'ve got a decent reputation on the streets, though I\'m not sure you\'re A-list material yet.  No offense."
+  branches {
+    responseText: "None taken."
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "You should get out more. I\'ve done a lot already, certainly not wet behind the ears."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Well I haven\'t exactly heard of you before, either."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cbf5e3238392c1b0065aa"
+  }
+  index: 4
+  text: "It doesn\'t matter what you\'ve done for anyone else. My standards are higher than most, and I prefer to make my own assessments. So here\'s what we\'re going to do. I\'ve got a few small jobs I could use some help with, a good way to make some quick nuyen. You do a few of these jobs for me, and we\'ll see about getting you on the roster."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cbf9f3238392c1b0065ae"
+  }
+  index: 5
+  text: "You\'ll want to get on the roster, believe me. Clients come to me when they need a solid team of runners to see a job through to completion. When you work for me, you represent me. When you screw up, you\'re screwing me. Like most women, I don\'t like to be screwed without permission. So don\'t frag it up.  Wiz?"
+  branches {
+    responseText: "Wiz."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "What was the second thing again?"
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cbff63238392c1b0065b1"
+  }
+  index: 6
+  text: "Good. If you succeed, you get on the roster. I start giving you better jobs, and you start needing a bigger bank. I\'ll get you acess to things, I\'ve got a lot of friends. In return, I need you available to take my calls, to do the jobs I assign to you, and to do them well.\n\nIn the words of an old friend of mine, I\'m not offering you an easy life, just an interesting one. We clear on the terms?"
+  branches {
+    responseText: "We\'re clear."
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc04d3238392c1b0065b5"
+  }
+  index: 7
+  text: "Make yourself at home here in the receiving area. You\'ll be meeting with Matchstick. He\'s got a few jobs for you. I\'ll be checking in on your progress. Good luck, $(l.name)."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc0aa3238392c1b0065b7"
+  }
+  index: 8
+  text: "{{GM}}Honey\'s eyes narrow. She is not amused.{{/GM}} Sarcasm does not become you."
+  branches {
+    responseText: "Sorry about that."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I don\'t know. I always thought it made me look more slim."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cbee33238392c1b0065a7"
+  }
+  index: 9
+  text: "Then I\'m doing a good job keeping my name off of the lips of just anyone out there. This is dangerous profession. But you still wound a girl\'s pride.  But those who are on my roster ARE known, and that\'s what\'s more important."
+  branches {
+    responseText: "What\'s so important about your roster?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc24f3238392c1b006621"
+  }
+  index: 10
+  text: "So now we know what you\'re doing here."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc21a3238392c1b00661f"
+  }
+  index: 11
+  text: "Ahh. {{GM}}She barely glances at the card.{{/GM}} Yes, I know who you are. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

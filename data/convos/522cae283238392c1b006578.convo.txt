@@ -1,0 +1,118 @@
+idRef {
+  id: "522cae283238392c1b006578"
+}
+ui_name: "honey-security-convo"
+nodes {
+  idRef {
+    id: "522cae2a3238392c1b00657e"
+  }
+  index: 0
+  text: "{{GM}}From the wall, a security camera pivots and swivels towards you. A female voice comes over a hidden speaker, filling the room.{{/GM}}\n\nWho are you, and what are you doing here?"
+  branches {
+    responseText: "My name is $(s.name). I\'m here to see Honey."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "honey_business_card"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "My name is $(s.name). Who are you?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "honey_business_card"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Don\'t answer. Just walk away.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522caf9c3238392c1b006583"
+  }
+  index: 1
+  text: "Temporary access granted. Please be on your best behavior."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cafc03238392c1b006585"
+  }
+  index: 2
+  text: "{{GM}}There is no answer. The security camera returns to its original position and ignores you.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

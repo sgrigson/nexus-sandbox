@@ -1,0 +1,468 @@
+idRef {
+  id: "522cc2eb3238392c1b00668d"
+}
+ui_name: "honey-spectre-conversation"
+nodes {
+  idRef {
+    id: "522cc2f53238392c1b006693"
+  }
+  index: 0
+  text: "{{GM}}There are those who look dangerous, and then there are those who look psychotic. Spectre is more of the latter sort.{{/GM}}\n\nWho are you, and go the frag away. Wait, no, I don\'t give a handful of drek who you are. Just go away."
+  branches {
+    responseText: "I was wondering if you could tell me--"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "My, my. Aren\'t you a friendly fellow."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "So I guess a quick jam in the broom closet is out of the question?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I didn\'t know they stacked drek that high."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc3943238392c1b006699"
+  }
+  index: 1
+  text: "Stop bothering me, or we\'re both going to see how well flesh burns. I already know the answer, but I wouldn\'t mind seeing it again."
+  branches {
+    responseText: "I intended no offense."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "{{GM}}Reach out a finger and poke Spectre in the chest impudently.{{/GM}} Is this bothering you?"
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Nevermind. I was just leaving."
+    nextNodeIndex: 12
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc4063238392c1b00669e"
+  }
+  index: 2
+  text: "{{GM}}Spectre turns to look at you coldly. There is no trace of empathy, and very little restraint in the blunt look he gives you.{{/GM}}\n\nWait, you the new recruit? Because I could use someone with a little time on their hands. You got time on your hands, newbie?"
+  branches {
+    responseText: "My name is $(s.name)."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "This newbie has a name. It\'s $(s.name)."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "My name is $(s.name). Call me newbie again, and I\'m breaking your fingers."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc4983238392c1b0066a3"
+  }
+  index: 3
+  text: "Oh, newbie has a name? That\'s cute. I\'m called Spectre. So, newbie, I could use a little backup to help me with something. You feeling helpful today, newbie?"
+  branches {
+    responseText: "Sure."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "If there\'s money in it."
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I wouldn\'t help you if you were on fire and I was standing waist-deep in the ocean."
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc50d3238392c1b0066a8"
+  }
+  index: 4
+  text: "Goooood. I\'ve known Honey for a while now. You know why I\'m hanging out here, and I\'m not in there shmoozing with the rest?"
+  branches {
+    responseText: "No, but I\'m guessing you\'re going to tell me."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Because they can\'t handle your charming personality?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I don\'t care."
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc5543238392c1b0066ad"
+  }
+  index: 5
+  text: "Cute, newbie. The reason is, well, there are two reasons. The first reason is that I don\'t like people. I don\'t like pretty much anyone, and I\'m okay with that. They don\'t like me, either. The other reason is that I screwed up recently. I let my, uh, pride in my work get the better of me. Took a bit too much time carving up a security guard at a Mitsuhama facility. Honey didn\'t like that. I got seen. Recognized. Catalogued. Now there\'s a bounty on my head.\n\nBut it was art, I tell you... {{GM}}Spectre\'s voice grows wistful, gleefully reimagining his torture session.{{/GM}}"
+  branches {
+    responseText: "I....can see how that would get you on someone\'s bad side."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "{{GM}}You shudder.{{/GM}}"
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "You are a psychopath."
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc5f43238392c1b0066b2"
+  }
+  index: 6
+  text: "Where was I? Oh, right. So here\'s the thing: I\'m gonna make it up to her. Now I know what you\'re thinking, \"Spectre, you are an asshole. You don\'t like anybody. Why do you care what Honey thinks?\" Well, the answer to that question is that I /kind of/ like her. She knows how to talk to me. She treats me with respect, but doesn\'t kiss my ass. There aren\'t many who can pull that off. You don\'t get that every day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc63b3238392c1b0066b6"
+  }
+  index: 7
+  text: "Also, for purely selfish reasons, she offers the most entertaining jobs of anyone I\'ve worked for. She even lets me get away with a bit of ultraviolence once in awhile. I figure she wouldn\'t ask me along if violence wasn\'t required, so I fulfill my end of the bargain by bringing the violence to the party. But sometimes she doesn\'t like it when I enjoy my work too much. I guess everyone else in the world has some kind of limit when it comes to violence. I\'m still trying to find it."
+  branches {
+    responseText: "So what does this have to do with your getting back in Honey\'s good graces?"
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc6b03238392c1b0066b9"
+  }
+  index: 8
+  text: "What I\'m going to do is clear my name. The easy way. Gonna hit Lonestar HQ, cause a bit of destruction, and destroy everything with my name on it. Probably set the place on fire, too, just for fun."
+  branches {
+    responseText: "This sounds like...a, um,...good plan. But maybe we could try something a little more discreet?"
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "You are insane. How in the world will this make you LESS wanted?"
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I love it. I\'m in."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "No fragging way. You are going to get me killed."
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cc9e33238392c1b0066bf"
+  }
+  index: 9
+  text: "Oh yeah, newbie? So how would you do it?"
+  branches {
+    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} Sneak into Lonestar in disguise. Deck in, find your records, purge them, and then get out without anyone even knowing we were there."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "{{CC}}Intelligence: 4{{/CC}} Create a distraction to get most of the cops out of there. Subdue the remaining ones, and use a decker to purge your records. Wipe out all traces of our visit."
+    conditions {
+      ops {
+        functionName: "Compare Actor Attribute"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorAttributes"
+            }
+            args {
+              int_value: 4
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 4
+        }
+      }
+    }
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{CC}}Spellcasting: 5{{/CC}} Put the cops to sleep. We\'ll be in and out before they wake up."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 5
+        }
+      }
+    }
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{CC}}Decking: 5{{/CC}} How about we just hack into their system and change your record to show you resisted arrest and that you\'re now a dead man? They won\'t be looking for a dead man."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 5
+        }
+      }
+    }
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "How about we just not try to set the place on fire and kill as many Lonestar as we can and instead focus on finding the computer with your data on it and destroy it?"
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522ccd3f3238392c1b0066c6"
+  }
+  index: 10
+  text: "Hmm, I guess that might work. Hadn\'t thought of that. Maybe that\'s why I don\'t usually lead these little groups. Okay, sure. I\'ll let you plot my revenge, and we\'ll see how it goes."
+  branches {
+    responseText: "Revenge?  Wait..."
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "This isn\'t a revenge mission."
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "If you can\'t keep your itchy magick fingers to yourself, I\'d be better off going alone."
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522ccd853238392c1b0066cb"
+  }
+  index: 11
+  text: "Did I say revenge? I didn\'t mean that. I meant to say penance. Yeah, that."
+  branches {
+    responseText: "Whatever. Let\'s just get started before I change my mind."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "On second thought, the answer is still no."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cce843238392c1b00679c"
+  }
+  index: 12
+  text: "Well then go slot yourself. I\'m tired of talking to you, anyway."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

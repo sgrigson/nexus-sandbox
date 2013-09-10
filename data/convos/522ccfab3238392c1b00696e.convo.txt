@@ -1,0 +1,92 @@
+idRef {
+  id: "522ccfab3238392c1b00696e"
+}
+ui_name: "honey-ronin-convo"
+nodes {
+  idRef {
+    id: "522ccfb63238392c1b006974"
+  }
+  index: 0
+  text: "{{GM}}The troll before you looks distinctly Japanese. Black hair pulled back behind his head tightly, his ram\'s horns honed sharp and deadly-looking. One of them has a tight bandage wrapped around it.{{/GM}}\n\nArigato, $(s.name). I saw you talking to Honey, so let me welcome you to your audition."
+  branches {
+    responseText: "Audition?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522ccffa3238392c1b006979"
+  }
+  index: 1
+  text: "Yes, audition. We all audition. Honey wants runners she can trust. Once she trusts you, she puts you on her roster. It\'s more honorable of an arrangement than you\'ll usually get in the shadows. So what can I do for you?"
+  branches {
+    responseText: "So what\'s your story?"
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cd0203238392c1b00697c"
+  }
+  index: 2
+  text: "My story? I do not often tell my story, but there are not often those who ask, either. Very well."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cd0363238392c1b00697f"
+  }
+  index: 3
+  text: "I started out in Japan, if that was not obvious. Back when I was human, before I awakened. I worked as a security guard for Renraku. Over the years, I proved my worth, and they respected me so much that I was made one of the famous Red Samurai, the elite guards of Renraku. I lived the corp lifestyle, had a credstick that always showed a balance, and slept in the finest rooms you\'ve ever seen. Whether I wanted a woman or a weapon, I got it. I thought it was everything I wanted."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cd0803238392c1b006983"
+  }
+  index: 4
+  text: "But then I changed. The Japanese aren\'t very open-minded when it comes to metahumans. Even less so when you\'re a Red Samurai. So they evicted me. Kicked me out. Treated me like garbage.\n\n{{GM}}There is tightly-controlled anger in his voice.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cd0ab3238392c1b006986"
+  }
+  index: 5
+  text: "I became ronin, through no choice of my own. Though I tried to find a similar job somewhere else, no one in Japan was interested. So when a cargo ship was heading out of Japan, I said my goodbyes and stowed away on it. Ended up here, in Seattle.\n\nI worked as a bouncer for a time at a few different nightclubs, but there was little honor in that job. There was no real fighting to be had, just escorting drunks out onto the street. I began to feel like a bully, not a warrior, not even a bodyguard. I wanted to feel that again.\n\nI wanted a chance to create my own honor, for without honor I did not wish to live."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522cd11d3238392c1b00698b"
+  }
+  index: 6
+  text: "Honey found me, and I started running the shadows at her request. I found a freedom in this that I had never known. I don\'t take every job she offers, and she\'s come to respect my honor. But I know that I could have risen farther in her estimation if I was willing to take some of these less honorable jobs. I\'d probably have more money, too.\n\nBut nuyen cannot buy honor, and we now have an understanding. Hopefully me and you now have an understanding, too."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
